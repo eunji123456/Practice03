@@ -8,6 +8,9 @@ public class Friend {
 
     
     //필요한 메소드 작성
+    public void setname (String name) {
+    	this.name=name;
+    }
     
     
     

@@ -1,12 +1,13 @@
 package com.javaex.problem08;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class BookShop {
 
     public static void main(String[] args) {
         Book[] books = new Book[10];
-
+// 북타입의 북이라는 배열을 하나만들었고 그 칸은 10칸임 . 정보는 아래와 같음 
         books[0] = new Book(1, "트와일라잇", "스테파니메이어");
         books[1] = new Book(2, "뉴문", "스테파니메이어");
         books[2] = new Book(3, "이클립스", "스테파니메이어");
@@ -19,6 +20,7 @@ public class BookShop {
         books[9] = new Book(10, "풀하우스", "원수연");
 
         System.out.println("*****도서 정보 출력하기******");
+        //displayBookInfo 라는 메소드를 호출. book을참조하는 
         displayBookInfo(books);
         
         Scanner scanner = new Scanner(System.in);
@@ -36,5 +38,8 @@ public class BookShop {
     //(2)전달받은 배열을 모두 출력하는 메소드
     private static void displayBookInfo(Book[] books) {
         //코드작성
+    	for(int i=0;i<books.length;i++) {
+    	System.out.print(books[i].bookNo()+books[i].title()+books[i].author()+'\n');
+    	}
     }
 }

@@ -1,6 +1,7 @@
 package com.javaex.problem06;
 
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
 public class FriendApp {
 
@@ -8,12 +9,15 @@ public class FriendApp {
 
         Friend[] friendArray = new Friend[3];
         Scanner sc = new Scanner(System.in);
-
+    
         System.out.println("친구를 3명 등록해 주세요");
-
-        
+       for(int i =0;i<friendArray.length;i++) {
+        	friendArray[i]= new Friend();
+        	String a = sc.nextLine();
+        	
+       }
             // 친구정보 입력받기
-
+        	
             // 입력받은 친구정보를 공백으로 분리
 
             // Friend 객체 생성하여 데이터 넣기
